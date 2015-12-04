@@ -15,6 +15,7 @@
 		3B60108E1C0F65EB00B2CD5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B60108C1C0F65EB00B2CD5A /* LaunchScreen.storyboard */; };
 		3B6010991C0F65EC00B2CD5A /* SmartRetailAnalyticsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6010981C0F65EC00B2CD5A /* SmartRetailAnalyticsTests.m */; };
 		3B6010A41C0F65EC00B2CD5A /* SmartRetailAnalyticsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6010A31C0F65EC00B2CD5A /* SmartRetailAnalyticsUITests.m */; };
+		3B6010B61C0FE66C00B2CD5A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6010B51C0FE66C00B2CD5A /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		3B60109F1C0F65EC00B2CD5A /* SmartRetailAnalyticsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartRetailAnalyticsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6010A31C0F65EC00B2CD5A /* SmartRetailAnalyticsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartRetailAnalyticsUITests.m; sourceTree = "<group>"; };
 		3B6010A51C0F65EC00B2CD5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B6010B41C0FE66C00B2CD5A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		3B6010B51C0FE66C00B2CD5A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				3B6010821C0F65EB00B2CD5A /* AppDelegate.m */,
 				3B6010841C0F65EB00B2CD5A /* ViewController.h */,
 				3B6010851C0F65EB00B2CD5A /* ViewController.m */,
+				3B6010B41C0FE66C00B2CD5A /* HomeViewController.h */,
+				3B6010B51C0FE66C00B2CD5A /* HomeViewController.m */,
 				3B6010871C0F65EB00B2CD5A /* Main.storyboard */,
 				3B60108A1C0F65EB00B2CD5A /* Assets.xcassets */,
 				3B60108C1C0F65EB00B2CD5A /* LaunchScreen.storyboard */,
@@ -273,6 +278,7 @@
 				3B6010861C0F65EB00B2CD5A /* ViewController.m in Sources */,
 				3B6010831C0F65EB00B2CD5A /* AppDelegate.m in Sources */,
 				3B6010801C0F65EB00B2CD5A /* main.m in Sources */,
+				3B6010B61C0FE66C00B2CD5A /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

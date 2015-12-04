@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HomeViewController.h"
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextField *username;
+@property (strong, nonatomic) IBOutlet UITextField *password;
 
 @end
 
