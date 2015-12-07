@@ -16,6 +16,8 @@
 		3B6010991C0F65EC00B2CD5A /* SmartRetailAnalyticsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6010981C0F65EC00B2CD5A /* SmartRetailAnalyticsTests.m */; };
 		3B6010A41C0F65EC00B2CD5A /* SmartRetailAnalyticsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6010A31C0F65EC00B2CD5A /* SmartRetailAnalyticsUITests.m */; };
 		3B6010B61C0FE66C00B2CD5A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6010B51C0FE66C00B2CD5A /* HomeViewController.m */; };
+		3B6011051C1511A500B2CD5A /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6011041C1511A500B2CD5A /* HomeModel.m */; };
+		3B6011081C1511D200B2CD5A /* Deals.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6011071C1511D200B2CD5A /* Deals.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		3B6010A51C0F65EC00B2CD5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B6010B41C0FE66C00B2CD5A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		3B6010B51C0FE66C00B2CD5A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		3B6011031C1511A500B2CD5A /* HomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModel.h; sourceTree = "<group>"; };
+		3B6011041C1511A500B2CD5A /* HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
+		3B6011061C1511D200B2CD5A /* Deals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deals.h; sourceTree = "<group>"; };
+		3B6011071C1511D200B2CD5A /* Deals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deals.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,10 @@
 		3B60107D1C0F65EB00B2CD5A /* SmartRetailAnalytics */ = {
 			isa = PBXGroup;
 			children = (
+				3B6011031C1511A500B2CD5A /* HomeModel.h */,
+				3B6011041C1511A500B2CD5A /* HomeModel.m */,
+				3B6011061C1511D200B2CD5A /* Deals.h */,
+				3B6011071C1511D200B2CD5A /* Deals.m */,
 				3B6010811C0F65EB00B2CD5A /* AppDelegate.h */,
 				3B6010821C0F65EB00B2CD5A /* AppDelegate.m */,
 				3B6010841C0F65EB00B2CD5A /* ViewController.h */,
@@ -275,8 +285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B6011051C1511A500B2CD5A /* HomeModel.m in Sources */,
 				3B6010861C0F65EB00B2CD5A /* ViewController.m in Sources */,
 				3B6010831C0F65EB00B2CD5A /* AppDelegate.m in Sources */,
+				3B6011081C1511D200B2CD5A /* Deals.m in Sources */,
 				3B6010801C0F65EB00B2CD5A /* main.m in Sources */,
 				3B6010B61C0FE66C00B2CD5A /* HomeViewController.m in Sources */,
 			);
@@ -502,6 +514,7 @@
 				3B6010AA1C0F65EC00B2CD5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B6010AB1C0F65EC00B2CD5A /* Build configuration list for PBXNativeTarget "SmartRetailAnalyticsTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +523,7 @@
 				3B6010AD1C0F65EC00B2CD5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B6010AE1C0F65EC00B2CD5A /* Build configuration list for PBXNativeTarget "SmartRetailAnalyticsUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +532,7 @@
 				3B6010B01C0F65EC00B2CD5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
