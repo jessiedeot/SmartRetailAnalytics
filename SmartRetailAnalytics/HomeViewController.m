@@ -23,6 +23,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     _usernameLabel.text = _labelText;
+    NSString *username=self.labelText;
+    
     
     // Set this view controller object as the delegate and data source for the table view
     self.listTableView.delegate = self;
@@ -38,7 +40,7 @@
     _homeModel.delegate = self;
     
     // Call the download items method of the home model object
-    [_homeModel downloadItems];
+    [_homeModel downloadItems:username];
 }
 
 - (void)didReceiveMemoryWarning {

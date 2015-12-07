@@ -18,6 +18,6 @@
 
 @property (nonatomic, weak) id<HomeModelProtocol> delegate;
 
-- (void)downloadItems;
+- (void)downloadItems:( NSString *) cust_id;
 
 @end

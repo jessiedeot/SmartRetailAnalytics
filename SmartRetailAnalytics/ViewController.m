@@ -30,11 +30,6 @@
     HomeViewController *vc = [[HomeViewController alloc] init];
     UITabBarController* tbc = [segue destinationViewController];
     vc = (HomeViewController *)[[tbc customizableViewControllers] objectAtIndex:0];
-    
-    
-    
-    //HomeViewController *destination = [segue destinationViewController];
-    //[[destination customizableViewControllers] objectAtIndex:0] = _username.text;
     vc.labelText = _username.text;
 }
 

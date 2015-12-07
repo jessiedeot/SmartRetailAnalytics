@@ -17,10 +17,14 @@
 
 @implementation HomeModel
 
-- (void)downloadItems
+- (void)downloadItems :( NSString *) cust_id
 {
     // Download the json file
-    NSURL *jsonFileUrl = [NSURL URLWithString:@"http://localhost/retail/deals.php"];
+    NSString * downloadUrl = [NSString stringWithFormat:@"%@%@", @"http://localhost/retail/deals.php?cust_id=", cust_id];
+    
+    NSLog(downloadUrl);
+    
+    NSURL *jsonFileUrl = [NSURL URLWithString:downloadUrl];
     
     // Create the request
     NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:jsonFileUrl];
