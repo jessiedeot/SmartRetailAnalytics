@@ -32,6 +32,7 @@
     _usernameLabel.text = _labelText;
     NSString *username=self.labelText;
     
+    self.userName=username;
     
     // Set this view controller object as the delegate and data source for the table view
     self.listTableView.delegate = self;
@@ -88,25 +89,17 @@
     return myCell;
 }
 
--(void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
-{
-    
-    //self.controllerB = (ShopViewController *) [tabBarController.viewControllers objectAtIndex:1];
-    //In our example here, we only have 2 view controllers (A and B)
-    //So, index 1 is where controller B resides.
-    
-   
-   // UITabBarController* tbc = [segue viewController];
-  //  vc = (HomeViewController *)[[tbc customizableViewControllers] objectAtIndex:0];
-  //  vc.labelText = _username.text;
-
-    
-    
-    NSLog(_labelText);
-    
-    self.controllerB.userId = _labelText;
-    
-    //This will change the text of the label in controller B
+-(BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
+    if ([viewController isKindOfClass:[ShopViewController class]]){
+        ShopViewController *svc = (ShopViewController *) viewController;
+        
+        svc.userId = self.userName;
+        NSLog(svc.userId);
+        
+    }
+    return TRUE;
 }
+    //This will change the text of the label in controller B
+
 
 @end

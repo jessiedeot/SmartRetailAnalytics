@@ -10,10 +10,8 @@
 
 @interface ShopViewController()
 {
-
     NSMutableData *downloadedData;
    
-
 }
 
 
@@ -21,15 +19,23 @@
 
 @implementation ShopViewController
 
+-(void)viewDidAppear{
+ 
+  //  self.cust_id.text=self.userId;
+
+
+}
+
 - (void)viewDidLoad {
+
+    [super viewDidLoad];
+
     
-    NSLog(@"In shop @",self.userId);
-    
+    self.cust_id.text=self.userId;
     
     [self.nextitemLbl setHidden:YES];
     [self.nextItemSuggestion setHidden:YES];
     
-     [super viewDidLoad];
     
     // Do any additional setup after loading the view, typically from a nib.
 }

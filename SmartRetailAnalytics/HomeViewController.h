@@ -16,6 +16,6 @@
 @property (strong, nonatomic) NSString *labelText;
 @property (strong, nonatomic) IBOutlet UITableView *listTableView;
 @property(strong, nonatomic) ShopViewController *controllerB;
-
+@property (strong, nonatomic) NSString *userName;
 
 @end
