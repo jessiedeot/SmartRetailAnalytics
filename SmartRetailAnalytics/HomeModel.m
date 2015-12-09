@@ -20,7 +20,7 @@
 - (void)downloadItems :( NSString *) cust_id
 {
     // Download the json file
-    NSString * downloadUrl = [NSString stringWithFormat:@"%@%@", @"http://localhost/retail/deals.php?cust_id=", cust_id];
+    NSString * downloadUrl = [NSString stringWithFormat:@"%@%@", @"http://smartretail.bitnamiapp.com/Retail/deals.php?cust_id=", cust_id];
     
     NSLog(downloadUrl);
     

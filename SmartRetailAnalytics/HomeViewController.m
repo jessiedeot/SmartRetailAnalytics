@@ -13,14 +13,21 @@
 {
     HomeModel *_homeModel;
     NSArray *_feedItems;
+    
 }
 
 @end
 
 @implementation HomeViewController
+ 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.tabBarController.delegate = self;
+  
+  //  AppDelegate *deg = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
     // Do any additional setup after loading the view.
     _usernameLabel.text = _labelText;
     NSString *username=self.labelText;
@@ -79,6 +86,27 @@
     myCell.textLabel.text = item.product_name;
     
     return myCell;
+}
+
+-(void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+    
+    //self.controllerB = (ShopViewController *) [tabBarController.viewControllers objectAtIndex:1];
+    //In our example here, we only have 2 view controllers (A and B)
+    //So, index 1 is where controller B resides.
+    
+   
+   // UITabBarController* tbc = [segue viewController];
+  //  vc = (HomeViewController *)[[tbc customizableViewControllers] objectAtIndex:0];
+  //  vc.labelText = _username.text;
+
+    
+    
+    NSLog(_labelText);
+    
+    self.controllerB.userId = _labelText;
+    
+    //This will change the text of the label in controller B
 }
 
 @end

@@ -24,41 +24,47 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Customer ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0m9-mx-mLS">
+                                <rect key="frame" x="20" y="131" width="280" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mfZ-5v-WTz">
+                                <rect key="frame" x="20" y="185" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HxN-UX-KiW">
-                                <rect key="frame" x="99" y="215" width="85" height="30"/>
+                                <rect key="frame" x="118" y="259" width="85" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.81176470590000005" green="0.38823529410000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Sign in">
+                                <state key="normal" title="Login">
                                     <color key="titleColor" red="0.81176470590000005" green="0.38823529410000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="qwn-yg-f7H" kind="push" id="2Yl-mj-cI7"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Customer ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0m9-mx-mLS">
-                                <rect key="frame" x="20" y="151" width="280" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.81176470588235294" green="0.38823529411764707" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="KQb-1I-8Mn"/>
                     <connections>
+                        <outlet property="password" destination="mfZ-5v-WTz" id="ycL-5J-QYJ"/>
                         <outlet property="username" destination="0m9-mx-mLS" id="Gqv-Vm-xiH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="610" y="319"/>
+            <point key="canvasLocation" x="374" y="300"/>
         </scene>
-        <!--Item 2-->
+        <!--Checkout-->
         <scene sceneID="Ou8-fg-ado">
             <objects>
-                <viewController id="bW5-kg-L9W" sceneMemberID="viewController">
+                <viewController id="bW5-kg-L9W" customClass="ShopViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C13-qJ-pCp"/>
                         <viewControllerLayoutGuide type="bottom" id="Tfx-5B-CdR"/>
@@ -66,16 +72,108 @@
                     <view key="view" contentMode="scaleToFill" id="mWV-89-RfC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Product ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pac-Zy-lBc">
+                                <rect key="frame" x="20" y="118" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quantity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wv6-2l-MmP">
+                                <rect key="frame" x="20" y="171" width="65" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h8k-LD-2iG">
+                                <rect key="frame" x="142" y="118" width="128" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bky-Rq-ENN">
+                                <rect key="frame" x="142" y="167" width="128" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNf-ye-Myy">
+                                <rect key="frame" x="38" y="246" width="106" height="47"/>
+                                <color key="backgroundColor" red="0.84428267045454541" green="0.39606345709375451" blue="0.080811836619179206" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Add to Cart">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tf-EE-MuW">
+                                <rect key="frame" x="171" y="246" width="106" height="47"/>
+                                <color key="backgroundColor" red="0.83739741161616166" green="0.39283349689920566" blue="0.080152803297994638" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Suggestions">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="suggestionBtn:" destination="bW5-kg-L9W" eventType="touchUpInside" id="iwY-VY-D5d"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Suggestions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vta-HD-SCu">
+                                <rect key="frame" x="106" y="336" width="95" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Suggestion Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6th-Au-6sB">
+                                <rect key="frame" x="98" y="379" width="124" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Customer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gg9-wV-ElH">
+                                <rect key="frame" x="20" y="40" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVH-hj-ZRk">
+                                <rect key="frame" x="196" y="40" width="17" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="yDb-ee-hRq"/>
+                    <tabBarItem key="tabBarItem" title="Checkout" id="yDb-ee-hRq"/>
+                    <connections>
+                        <outlet property="cust_id" destination="hVH-hj-ZRk" id="GBg-XB-aL9"/>
+                        <outlet property="nextItemSuggestion" destination="6th-Au-6sB" id="U4M-Zy-L9E"/>
+                        <outlet property="nextitemLbl" destination="Vta-HD-SCu" id="f8A-o9-tUw"/>
+                        <outlet property="productName" destination="h8k-LD-2iG" id="ZsI-5W-CbO"/>
+                        <outlet property="productQty" destination="Bky-Rq-ENN" id="Mtc-y8-uEZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D4O-IU-cz7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1442" y="460"/>
+            <point key="canvasLocation" x="1161" y="632"/>
         </scene>
-        <!--Item 1-->
+        <!--Shelf Suggestion-->
+        <scene sceneID="3ka-uE-fmS">
+            <objects>
+                <viewController id="SI9-74-eMK" customClass="SuggestionControllerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="luX-sE-fmJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="KTe-cZ-prY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mZA-n8-1yF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Shelf Suggestion" id="vkH-vM-Llv"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vRb-ZK-Kmy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="987" y="-354"/>
+        </scene>
+        <!--Frequently Bought-->
         <scene sceneID="xf7-mf-pIU">
             <objects>
                 <viewController id="QOq-vQ-k0g" customClass="HomeViewController" sceneMemberID="viewController">
@@ -87,8 +185,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhf-04-JIY">
-                                <rect key="frame" x="54" y="28" width="71" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Customer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhf-04-JIY">
+                                <rect key="frame" x="50" y="28" width="75" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -122,7 +220,7 @@
                         <animations/>
                         <color key="backgroundColor" red="0.81176470590000005" green="0.38823529410000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="CPb-hs-7jz"/>
+                    <tabBarItem key="tabBarItem" title="Frequently Bought" id="CPb-hs-7jz"/>
                     <navigationItem key="navigationItem" id="Tt6-xP-DYM"/>
                     <connections>
                         <outlet property="listTableView" destination="Mmu-1X-dtu" id="juj-nc-TlT"/>
@@ -131,7 +229,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DGE-cH-m3N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1442" y="-188"/>
+            <point key="canvasLocation" x="1362" y="-45"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="I3h-6V-7cU">
@@ -147,11 +245,12 @@
                     <connections>
                         <segue destination="QOq-vQ-k0g" kind="relationship" relationship="viewControllers" id="Hbd-VM-fDP"/>
                         <segue destination="bW5-kg-L9W" kind="relationship" relationship="viewControllers" id="n1J-Kf-jMa"/>
+                        <segue destination="SI9-74-eMK" kind="relationship" relationship="viewControllers" id="R9n-Tb-FPe"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zmn-mX-nf5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1011" y="319"/>
+            <point key="canvasLocation" x="732" y="300"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vrf-Dh-AKi">
@@ -170,7 +269,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dWn-O7-SuS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="78" y="319"/>
+            <point key="canvasLocation" x="-10" y="300"/>
         </scene>
     </scenes>
 </document>

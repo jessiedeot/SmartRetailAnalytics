@@ -16,6 +16,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    //AppDelegate *deg = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+   
     // Override point for customization after application launch.
     return YES;
 }
