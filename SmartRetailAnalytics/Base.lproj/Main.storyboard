@@ -162,9 +162,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D4O-IU-cz7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1161" y="632"/>
+            <point key="canvasLocation" x="1176" y="769"/>
         </scene>
-        <!--Shelf Suggestion-->
+        <!--Suggestion Controller View Controller-->
         <scene sceneID="3ka-uE-fmS">
             <objects>
                 <viewController id="SI9-74-eMK" customClass="SuggestionControllerViewController" sceneMemberID="viewController">
@@ -182,7 +182,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SuggestionBasicCell" id="4rj-dX-puH">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4rj-dX-puH" id="N9K-9C-43w">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -197,15 +197,56 @@
                         <animations/>
                         <color key="backgroundColor" red="0.81176470590000005" green="0.38823529410000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Shelf Suggestion" id="vkH-vM-Llv"/>
+                    <navigationItem key="navigationItem" id="xyC-Il-Mbc"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="suggestionTableView" destination="BPZ-FS-RbI" id="Afu-gx-f2i"/>
+                        <segue destination="bae-l2-AXd" kind="push" identifier="detailSegue" id="bgG-tF-cyf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vRb-ZK-Kmy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="987" y="-354"/>
+            <point key="canvasLocation" x="1734" y="-339"/>
+        </scene>
+        <!--Suggestion Detail View Controller-->
+        <scene sceneID="jRP-UU-sgp">
+            <objects>
+                <viewController id="bae-l2-AXd" customClass="SuggestionDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wqh-5D-7va"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qlg-d7-bC6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mPv-1a-Pd8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uYj-Xx-FPo">
+                                <rect key="frame" x="20" y="114" width="280" height="319"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Consider Shelfing These Items Together" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olA-Km-UhP">
+                                <rect key="frame" x="7" y="85" width="307" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lrM-qJ-G8d"/>
+                    <connections>
+                        <outlet property="textView" destination="uYj-Xx-FPo" id="6e4-7C-mve"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pUg-OQ-Wza" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2118" y="-339"/>
         </scene>
         <!--Frequently Bought-->
         <scene sceneID="xf7-mf-pIU">
@@ -263,7 +304,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DGE-cH-m3N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1362" y="-45"/>
+            <point key="canvasLocation" x="1517" y="285"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="I3h-6V-7cU">
@@ -279,7 +320,7 @@
                     <connections>
                         <segue destination="QOq-vQ-k0g" kind="relationship" relationship="viewControllers" id="Hbd-VM-fDP"/>
                         <segue destination="bW5-kg-L9W" kind="relationship" relationship="viewControllers" id="n1J-Kf-jMa"/>
-                        <segue destination="SI9-74-eMK" kind="relationship" relationship="viewControllers" id="R9n-Tb-FPe"/>
+                        <segue destination="aF2-KB-g51" kind="relationship" relationship="viewControllers" id="R9n-Tb-FPe"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zmn-mX-nf5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -304,6 +345,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dWn-O7-SuS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-10" y="300"/>
+        </scene>
+        <!--Shelf Suggestion-->
+        <scene sceneID="h7o-fH-s6k">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aF2-KB-g51" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Shelf Suggestion" id="vkH-vM-Llv"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QQs-R3-ecj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SI9-74-eMK" kind="relationship" relationship="rootViewController" id="HgG-Zh-XwG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qip-YT-2pw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1202" y="-339"/>
         </scene>
     </scenes>
 </document>

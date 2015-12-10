@@ -20,6 +20,7 @@
 		3B6011081C1511D200B2CD5A /* Deals.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6011071C1511D200B2CD5A /* Deals.m */; };
 		3B60110E1C18E9A400B2CD5A /* SuggestionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B60110D1C18E9A400B2CD5A /* SuggestionModel.m */; };
 		3B6011111C18E9BA00B2CD5A /* Suggestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6011101C18E9BA00B2CD5A /* Suggestion.m */; };
+		3B6011141C18FA9200B2CD5A /* SuggestionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6011131C18FA9200B2CD5A /* SuggestionDetailViewController.m */; };
 		B12F6AF01C1679E4008922A8 /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B12F6AEF1C1679E4008922A8 /* ShopViewController.m */; };
 		B15C65971C17B29E00D3D447 /* SuggestionControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B15C65961C17B29E00D3D447 /* SuggestionControllerViewController.m */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,8 @@
 		3B60110D1C18E9A400B2CD5A /* SuggestionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionModel.m; sourceTree = "<group>"; };
 		3B60110F1C18E9BA00B2CD5A /* Suggestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Suggestion.h; sourceTree = "<group>"; };
 		3B6011101C18E9BA00B2CD5A /* Suggestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Suggestion.m; sourceTree = "<group>"; };
+		3B6011121C18FA9200B2CD5A /* SuggestionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionDetailViewController.h; sourceTree = "<group>"; };
+		3B6011131C18FA9200B2CD5A /* SuggestionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionDetailViewController.m; sourceTree = "<group>"; };
 		B12F6AEE1C1679E4008922A8 /* ShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShopViewController.h; path = ../ShopViewController.h; sourceTree = "<group>"; };
 		B12F6AEF1C1679E4008922A8 /* ShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShopViewController.m; path = ../ShopViewController.m; sourceTree = "<group>"; };
 		B15C65951C17B29E00D3D447 /* SuggestionControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionControllerViewController.h; sourceTree = "<group>"; };
@@ -136,6 +139,8 @@
 				3B6010821C0F65EB00B2CD5A /* AppDelegate.m */,
 				B15C65951C17B29E00D3D447 /* SuggestionControllerViewController.h */,
 				B15C65961C17B29E00D3D447 /* SuggestionControllerViewController.m */,
+				3B6011121C18FA9200B2CD5A /* SuggestionDetailViewController.h */,
+				3B6011131C18FA9200B2CD5A /* SuggestionDetailViewController.m */,
 				3B6010841C0F65EB00B2CD5A /* ViewController.h */,
 				3B6010851C0F65EB00B2CD5A /* ViewController.m */,
 				3B6010B41C0FE66C00B2CD5A /* HomeViewController.h */,
@@ -314,6 +319,7 @@
 				3B6010801C0F65EB00B2CD5A /* main.m in Sources */,
 				3B6010B61C0FE66C00B2CD5A /* HomeViewController.m in Sources */,
 				3B60110E1C18E9A400B2CD5A /* SuggestionModel.m in Sources */,
+				3B6011141C18FA9200B2CD5A /* SuggestionDetailViewController.m in Sources */,
 				B12F6AF01C1679E4008922A8 /* ShopViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
