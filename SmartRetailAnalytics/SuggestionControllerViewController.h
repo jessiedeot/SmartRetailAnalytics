@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SuggestionModel.h"
 
-@interface SuggestionControllerViewController : UIViewController
+@interface SuggestionControllerViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, SuggestionModelProtocol>
+
+{
+    NSMutableArray  *arrayForBool;
+    NSArray *sectionTitleArray;
+    
+}
+
+@property (strong, nonatomic) IBOutlet UITableView *suggestionTableView;
 
 @end

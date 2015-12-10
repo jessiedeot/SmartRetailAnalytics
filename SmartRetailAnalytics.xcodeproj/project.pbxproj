@@ -18,6 +18,8 @@
 		3B6010B61C0FE66C00B2CD5A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6010B51C0FE66C00B2CD5A /* HomeViewController.m */; };
 		3B6011051C1511A500B2CD5A /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6011041C1511A500B2CD5A /* HomeModel.m */; };
 		3B6011081C1511D200B2CD5A /* Deals.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6011071C1511D200B2CD5A /* Deals.m */; };
+		3B60110E1C18E9A400B2CD5A /* SuggestionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B60110D1C18E9A400B2CD5A /* SuggestionModel.m */; };
+		3B6011111C18E9BA00B2CD5A /* Suggestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6011101C18E9BA00B2CD5A /* Suggestion.m */; };
 		B12F6AF01C1679E4008922A8 /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B12F6AEF1C1679E4008922A8 /* ShopViewController.m */; };
 		B15C65971C17B29E00D3D447 /* SuggestionControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B15C65961C17B29E00D3D447 /* SuggestionControllerViewController.m */; };
 /* End PBXBuildFile section */
@@ -62,6 +64,10 @@
 		3B6011041C1511A500B2CD5A /* HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
 		3B6011061C1511D200B2CD5A /* Deals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deals.h; sourceTree = "<group>"; };
 		3B6011071C1511D200B2CD5A /* Deals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deals.m; sourceTree = "<group>"; };
+		3B60110C1C18E9A400B2CD5A /* SuggestionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionModel.h; sourceTree = "<group>"; };
+		3B60110D1C18E9A400B2CD5A /* SuggestionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionModel.m; sourceTree = "<group>"; };
+		3B60110F1C18E9BA00B2CD5A /* Suggestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Suggestion.h; sourceTree = "<group>"; };
+		3B6011101C18E9BA00B2CD5A /* Suggestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Suggestion.m; sourceTree = "<group>"; };
 		B12F6AEE1C1679E4008922A8 /* ShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShopViewController.h; path = ../ShopViewController.h; sourceTree = "<group>"; };
 		B12F6AEF1C1679E4008922A8 /* ShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShopViewController.m; path = ../ShopViewController.m; sourceTree = "<group>"; };
 		B15C65951C17B29E00D3D447 /* SuggestionControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionControllerViewController.h; sourceTree = "<group>"; };
@@ -120,6 +126,10 @@
 				3B6011041C1511A500B2CD5A /* HomeModel.m */,
 				3B6011061C1511D200B2CD5A /* Deals.h */,
 				3B6011071C1511D200B2CD5A /* Deals.m */,
+				3B60110C1C18E9A400B2CD5A /* SuggestionModel.h */,
+				3B60110D1C18E9A400B2CD5A /* SuggestionModel.m */,
+				3B60110F1C18E9BA00B2CD5A /* Suggestion.h */,
+				3B6011101C18E9BA00B2CD5A /* Suggestion.m */,
 				B12F6AEE1C1679E4008922A8 /* ShopViewController.h */,
 				B12F6AEF1C1679E4008922A8 /* ShopViewController.m */,
 				3B6010811C0F65EB00B2CD5A /* AppDelegate.h */,
@@ -298,10 +308,12 @@
 				3B6011051C1511A500B2CD5A /* HomeModel.m in Sources */,
 				3B6010861C0F65EB00B2CD5A /* ViewController.m in Sources */,
 				B15C65971C17B29E00D3D447 /* SuggestionControllerViewController.m in Sources */,
+				3B6011111C18E9BA00B2CD5A /* Suggestion.m in Sources */,
 				3B6010831C0F65EB00B2CD5A /* AppDelegate.m in Sources */,
 				3B6011081C1511D200B2CD5A /* Deals.m in Sources */,
 				3B6010801C0F65EB00B2CD5A /* main.m in Sources */,
 				3B6010B61C0FE66C00B2CD5A /* HomeViewController.m in Sources */,
+				3B60110E1C18E9A400B2CD5A /* SuggestionModel.m in Sources */,
 				B12F6AF01C1679E4008922A8 /* ShopViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
