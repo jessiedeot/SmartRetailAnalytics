@@ -20,7 +20,7 @@
 - (void)downloadItems
 {
     // Download the json file
-    NSURL *jsonFileUrl = [NSURL URLWithString:@"http://localhost/retail/suggestions.php"];
+    NSURL *jsonFileUrl = [NSURL URLWithString:@"http://smartretail.bitnamiapp.com/Retail/suggestions.php"];
     
     // Create the request
     NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:jsonFileUrl];

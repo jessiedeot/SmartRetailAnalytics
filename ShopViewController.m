@@ -52,12 +52,19 @@
 
     NSString *productName=[NSString stringWithFormat:@"%@", self.productName.text];
     
-    NSString *custId=[NSString stringWithFormat:@"%@", self.productName.text];
+    NSString *custId=[NSString stringWithFormat:@"%@", self.cust_id.text];
     
     
-    NSString *downloadUrl = [NSString stringWithFormat:@"%@%@", @"http://localhost/retail/deals.php?cust_id=5542"];
+    NSString *downloadUrl1 = [NSString stringWithFormat:@"%@%@%",
+                              @"http://smartretail.bitnamiapp.com/Retail/checkout.php?cust_id=",custId];
+    NSString *downloadUrl= [NSString stringWithFormat:@"%@%@%@",downloadUrl1,@"&product_name=",productName]  ;
     
-    NSURL *jsonFileUrl = [NSURL URLWithString:downloadUrl];
+    NSString* encodedUrl = [downloadUrl stringByAddingPercentEscapesUsingEncoding:
+                            NSUTF8StringEncoding];
+ 
+    
+    
+    NSURL *jsonFileUrl = [NSURL URLWithString:encodedUrl];
     
     // Create the request
     NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:jsonFileUrl];
@@ -72,6 +79,9 @@
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
     // Initialize the data object
+    
+    NSLog(@"Did recv response");
+    
     downloadedData = [[NSMutableData alloc] init];
 }
 
@@ -84,24 +94,47 @@
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
     // Create an array to store the locations
-    NSMutableArray *_locations = [[NSMutableArray alloc] init];
+ 
     
-    // Parse the JSON that came in
+    NSLog(@"Enter");
+    [self.nextItemSuggestion setHidden:YES];
+    [self.nextitemLbl setHidden:YES];
+      // Parse the JSON that came in
     NSError *error;
     NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData:downloadedData options:NSJSONReadingAllowFragments error:&error];
+    NSString *textAppnd=@"Customer would like to buy following with the product selected : ";
+    
+  
     
     // Loop through Json objects, create question objects and add them to our questions array
     for (int i = 0; i < jsonArray.count; i++)
     {
         NSDictionary *jsonElement = jsonArray[i];
         
+        if(![jsonElement[@"final_product_name"] isEqual: @""])
+        
+        {
+        
+        
         // Create a new location object and set its props to JsonElement properties
+        textAppnd= [NSString stringWithFormat:@" %@ %@,", textAppnd,jsonElement[@"final_product_name"]];
+        
+        }
        
-      //  self.nextItemSuggestion.text= jsonElement[@"suggestion"];
+        else{
+        
+             textAppnd= [NSString stringWithFormat:@" %@%", @"There are no suggestions to display for the product selected"];
+        
+        }
         
         // Add this question to the locations array
        
     }
+    
+     NSLog(textAppnd);
+    
+    self.nextItemSuggestion.text=textAppnd;
+    
     
     // Set the suggestion label to visible
         [self.nextItemSuggestion setHidden:NO];

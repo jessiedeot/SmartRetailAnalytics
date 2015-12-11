@@ -12,7 +12,9 @@
 @property (strong, nonatomic) IBOutlet UITextField *productName;
 
 @property (strong, nonatomic) IBOutlet UITextField *productQty;
-@property (strong, nonatomic) IBOutlet UILabel *nextItemSuggestion;
+
+@property (strong, nonatomic) IBOutlet UITextView *nextItemSuggestion;
+
 @property (strong, nonatomic) IBOutlet UILabel *nextitemLbl;
 - (IBAction)suggestionBtn:(id)sender;
 
