@@ -102,7 +102,7 @@
       // Parse the JSON that came in
     NSError *error;
     NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData:downloadedData options:NSJSONReadingAllowFragments error:&error];
-    NSString *textAppnd=@"Customer would like to buy following with the product selected : ";
+    NSString *textAppnd=@"";
     
   
     
@@ -117,7 +117,7 @@
         
         
         // Create a new location object and set its props to JsonElement properties
-        textAppnd= [NSString stringWithFormat:@" %@ %@,", textAppnd,jsonElement[@"final_product_name"]];
+        textAppnd= [NSString stringWithFormat:@" %@ \n %@", textAppnd,jsonElement[@"final_product_name"]];
         
         }
        
